@@ -1,0 +1,5 @@
+# IDE PhpStorm
+.idea/
+*.iml
+*.ipr
+*.iws
