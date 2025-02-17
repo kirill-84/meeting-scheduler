@@ -2,6 +2,8 @@ import {Geist, Geist_Mono, Inter} from "next/font/google";
 import "./globals.css";
 import {ChakraProvider} from "@chakra-ui/react";
 
+import { AuthProvider } from "@/app/auth-provider";
+
 const interSans = Inter({
    variable: "--font-inter-sans",
    subsets: ["cyrillic"],
@@ -24,6 +26,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+      <AuthProvider>
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${interSans.variable} antialiased`}
@@ -33,5 +36,6 @@ export default function RootLayout({ children }) {
       </ChakraProvider>
       </body>
     </html>
+      </AuthProvider>
   );
 }

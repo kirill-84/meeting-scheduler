@@ -1,6 +1,19 @@
+'use client';
 import React from 'react'
 import Image from "next/image";
 import {Button} from "@/components/ui/button";
+import { Box, Card, CardBody, CardFooter, Heading, SkeletonText, Stack, Text } from "@chakra-ui/react";
+import { LoginButton } from "@telegram-auth/react";
+import { signIn, signOut, useSession } from "next-auth/react";
+import type { User } from "@/app/api/auth/[...nextauth]/route";
+
+function LoadingPlaceholder() {
+    return (
+        <Box padding="6" boxShadow="lg" bg="white">
+            <SkeletonText mt="4" noOfLines={4} spacing="4" skeletonHeight="2" />
+        </Box>
+    );
+}
 
 function Header() {
     return (
