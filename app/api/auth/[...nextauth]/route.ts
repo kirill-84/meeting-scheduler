@@ -1,5 +1,5 @@
-import NextAuth, { NextAuthOptions } from "next-auth";
-import {CredentialsProvider} from "next-auth/providers/credentials";
+import NextAuth, { NextAuthOptions } from 'next-auth';
+import CredentialsProvider from "next-auth/providers/credentials";
 
 import { AuthDataValidator } from "@telegram-auth/server";
 import { objectToAuthDataMap } from "@telegram-auth/server/utils";
@@ -7,7 +7,7 @@ import { objectToAuthDataMap } from "@telegram-auth/server/utils";
 export type User = {
     id: string;
     name: string;
-    image: string;
+    image?: string;
 };
 
 declare module "next-auth" {

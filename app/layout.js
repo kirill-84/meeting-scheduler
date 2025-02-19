@@ -4,6 +4,7 @@ import {ChakraProvider} from "@chakra-ui/react";
 
 import { AuthProvider } from "@/app/auth-provider";
 
+
 const interSans = Inter({
    variable: "--font-inter-sans",
    subsets: ["cyrillic"],
