@@ -2,13 +2,6 @@
   "name": "meeting-scheduler",
   "version": "0.1.0",
   "private": true,
-  "keywords": [
-    "telegram",
-    "bot",
-    "login",
-    "widget",
-    "react"
-  ],
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
