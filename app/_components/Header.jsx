@@ -9,7 +9,7 @@ function Header() {
             <div className="flex items-center justify-between p-5 shadow-md">
                 <Image src="/logo.svg" width={100} height={100} alt="logo" className="w-[150px] md:w-[200px] "/>
                 <ul className="hidden md:flex gap-14 font-medium text-lg">
-                    <li className="hover:text-primary transition-all duration-300 cursor-pointer">Product</li>
+                    <li className="hover:text-primary transition-all duration-300 cursor-pointer">Products</li>
                     <li className="hover:text-primary transition-all duration-300 cursor-pointer">Pricing</li>
                     <li className="hover:text-primary transition-all duration-300 cursor-pointer">Contact Us</li>
                     <li className="hover:text-primary transition-all duration-300 cursor-pointer">About Us</li>
